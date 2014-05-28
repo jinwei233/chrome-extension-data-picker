@@ -162,7 +162,7 @@ function savePageData(){
 
     var row = {};
     row.name = name;
-    // row.prov = decodeURI(prov);
+    row.prov = decodeURI(prov);
     row.city = city;
 
     $.each(parts,function(i,item){
@@ -270,7 +270,7 @@ function handleCurrentCityOfPage(){
   }
 }
 
-handleCurrentCityOfPage();
+// handleCurrentCityOfPage();
 
 // 获取当前省份、某个市、高中下的数据
 // 计算某个市总共多少页
